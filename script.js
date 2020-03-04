@@ -4,15 +4,19 @@ var closeButton = document.getElementById("close");
 
 contactButton.onclick = () => {
     modalForm.style.display = 'flex';
+    contactButton.style.display = 'none';
+
 }
 
 closeButton.onclick = () => {
     modalForm.style.display = 'none';
+    contactButton.style.display = 'flex';
 }
 
 window.onclick = () => {
     if (event.target == modalForm) {
     modalForm.style.display  = 'none';
+    contactButton.style.display = 'flex';
     }
 }
 

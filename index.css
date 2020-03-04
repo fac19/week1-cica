@@ -1,9 +1,10 @@
 * {
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 header {
-    box-sizing: border-box;
+    
     cursor: pointer;
 }
 

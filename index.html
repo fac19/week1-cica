@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
@@ -25,15 +26,47 @@
       </section>
       <section class="contact-us">
         <p>Contact Us</p>
-        <div class="modal" id="modalBox"> 
-          <div class="modal-content" id="modalCont"></div>
+        <div class="contact-us__modal" id="modalBox"> 
+          <div class="contuact-us__modal-content" id="modalCont"></div>
           <span class="close">&times;</span>
-          <form>
-           <label for=""></label>
-           <input type="text">
-           <label for=""></label>
-           <input type="text">
+          <form class="contact-us__form">
+            <header>
+              <h1 class="form__header">Contact Kiko!</h1>
+            </header>
+          <div class="form__details">
+            <label>
+              Name*      
+              <input type="text" name="name" label="Your Name" placeholder="Full Name">
+            </label><br>
+          </div>
+          <div class="form__details">
+            <label>
+              Email*
+              <input type="email" name="email" label="Your Email" placeholder="Email">
+            </label><br>
+          </div>
+          <div class="form__details">
+            <label>
+              Phone*
+              <input type="tel" name="tel" placeholder="Phone Number">
+            </label><br>
+          </div>
+          <div class="form__details">
+            <label>
+              Company*
+              <input type="text" name="company" placeholder="Company Name">
+            </label><br>
+          </div>
+          <div class="form__details">
+            <label>
+              Message
+              <textarea name="message" placeholder="Send us a message!" rows="1"></textarea>
+            </label><br>
+          </div>
+            <button type="submit" class="form__submit">Submit</button>
           </form>
+
+          
         </div>
       </section>
     </main>

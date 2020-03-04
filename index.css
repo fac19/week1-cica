@@ -1,4 +1,128 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    
+    cursor: pointer;
+}
+
+
+/* / nav bar / */
+nav {
+    width: 100vw;
+    left: -100%;
+    height: 100vh;
+    top:0%;
+    margin: 0;
+    z-index: 9;
+    background: powderblue;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: left 0.55s ease;
+    overflow: hidden;
+    position: fixed;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+.nav-links li {
+    padding-bottom: 30%;
+}
+.nav-links li, .backtotop {
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.burger {
+    z-index: 10;
+    position: fixed;
+    /* padding: 35px 45px; */
+    padding-top: 5%;
+}
+.burger div {
+    width: 30px;
+    height: 3px;
+    margin: 8px;
+    background-color: black;
+}
+.burger span {
+    letter-spacing: 1px;
+}
+.toggle .line1 {
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotateZ(45deg) translate(-8px, -6px);
+}
+.line1, .line2, .line3 {
+    transition: all 0.3s ease;
+}
+.navToggle {
+    left:0;
+} 
+
+
+
+/* landing page */
+.memoji {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+img.meme {
+    width: 80%;
+    justify-self: center;
+}
+
+.landing-page {
+    height: 80vh;
+    padding-top: 30%;
+}
+
+.landing-page h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.title {
+    text-align: center;
+}
+/* About us */
+.about-us {
+    
+}
+
+fieldset.about {
+    border-radius: 10px;
+    margin: 7%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 1.5rem;
+    border-color: #9be3de;
+    border-style: solid;
+}
+
+.small-meme {
+    width: 40%;
+}
+
+.about legend {
+    width: 60%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
 }

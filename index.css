@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 * {
     font-family: "Poppins", sans-serif;
 }
 
 header {
+    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -125,9 +125,3 @@ fieldset.about {
     justify-content: center;
     
 }
-||||||| merged common ancestors
-=======
-* {
-  box-sizing: border-box;
-}
->>>>>>> master

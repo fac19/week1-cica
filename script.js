@@ -15,3 +15,20 @@ window.onclick = () => {
     modalForm.style.display  = 'none';
     }
 }
+
+ // Define variables for menu bar
+ const header = document.querySelector('header');
+ const nav = document.querySelector('nav');
+ const burgerIcon = document.querySelector('.burger');
+ 
+ // Menu slides in when burger is clicked 
+ header.addEventListener('click', showNav);
+ function showNav () {
+   nav.classList.toggle('navToggle');
+ }
+ 
+ // Burger animates when clicked
+ header.addEventListener('click', crossBurger);
+ function crossBurger() {
+   burgerIcon.classList.toggle('toggle');
+ }

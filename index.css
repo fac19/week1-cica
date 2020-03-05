@@ -5,7 +5,6 @@
 }
 
 header {
-    
     cursor: pointer;
 }
 
@@ -21,7 +20,7 @@ nav {
     top:0%;
     margin: 0;
     z-index: 9;
-    background: powderblue;
+    background: #f3ecb8;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -125,7 +124,7 @@ fieldset.about {
 
 fieldset.about h3 {
     font-size: 2rem;
-
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.3);
 }
 fieldset.about:nth-of-type(1) {
     background-color: #94CE8E;
@@ -157,7 +156,7 @@ fieldset.about:nth-of-type(4) {
 }
 
 .about legend h3 {
-   display: inline-block;
+    display: inline-block;
 }
 
 /* services */
@@ -228,8 +227,8 @@ p.review {
 }
 
 label, input, textarea {
-   display: block;
-   width: 100%;
+    display: block;
+    width: 100%;
 }
 
 label {
@@ -294,9 +293,9 @@ input, textarea {
     position: relative;
     display: flex;
     -webkit-animation-name: zoom;
-     -webkit-animation-duration: 0.6s;
-      animation-name: zoom;
-       animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 .contact-us {
@@ -329,12 +328,12 @@ input, textarea {
     color: hsl(0, 0%, 40%);
     font-weight: 60;
 }
-    
+
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
-  
+
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
@@ -369,7 +368,7 @@ input, textarea {
         width: 50%;
         height: 80%;
     }
-
+    
     .contact-us__modal {
         background-color: hsla(8, 100%, 0%, 0.7);
     }

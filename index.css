@@ -5,10 +5,12 @@
 }
 
 header {
-    
     cursor: pointer;
 }
 
+section {
+    margin: 20px 0;
+}
 
 /* / nav bar / */
 nav {
@@ -18,7 +20,7 @@ nav {
     top:0%;
     margin: 0;
     z-index: 9;
-    background: powderblue;
+    background: #f3ecb8;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -28,10 +30,12 @@ nav {
     overflow: hidden;
     position: fixed;
 }
+
 .nav-links {
     list-style: none;
     padding: 0;
 }
+
 .nav-links li {
     padding-bottom: 30%;
 }
@@ -103,8 +107,9 @@ img.meme {
     font-size: 2.2rem;
 }
 
-.title {
+.about-us__title, .services__title {
     text-align: center;
+    font-size: 30px;
 }
 
 /* About us */
@@ -121,7 +126,7 @@ fieldset.about {
 
 fieldset.about h3 {
     font-size: 2rem;
-
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.3);
 }
 fieldset.about:nth-of-type(1) {
     background-color: #94CE8E;
@@ -153,7 +158,53 @@ fieldset.about:nth-of-type(4) {
 }
 
 .about legend h3 {
-   display: inline-block;
+    display: inline-block;
+}
+
+/* services */
+.service-images {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 7%;
+}
+
+.service-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p.review {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+}
+
+.reviewer{
+    text-align: right;
+    margin-right: 10%;
+}
+
+.fas {
+    font-size: 1.5em;
+    color: rgba(85, 85, 85, 0.849);
+}
+
+
+.fa-quote-left {
+    margin-right: 90%;
+}
+
+.fa-quote-right {
+    margin-left: 90%;
 }
 
 /* contact us  */
@@ -179,8 +230,8 @@ fieldset.about:nth-of-type(4) {
 }
 
 label, input, textarea {
-   display: block;
-   width: 100%;
+    display: block;
+    width: 100%;
 }
 
 label {
@@ -245,9 +296,9 @@ input, textarea {
     position: relative;
     display: flex;
     -webkit-animation-name: zoom;
-     -webkit-animation-duration: 0.6s;
-      animation-name: zoom;
-       animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 .contact-us {
@@ -279,13 +330,17 @@ input, textarea {
     letter-spacing: 0.3rem;
     color: hsl(0, 0%, 40%);
     font-weight: 60;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
-    
+
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
-  
+
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
@@ -316,13 +371,39 @@ input, textarea {
 }
 
 @media only screen and (min-width: 768px) {
-    .contact-us__form {
-        width: 50%;
-        height: 80%;
+    nav {
+        width: 25vw;
+        background: hsla(53,71%,84%, 0.9)
     }
 
+    .mainSquish {
+        width: 75vw;
+        float: right;
+        transition: left 0.55s ease;
+    }
+
+    .contact-us__form {
+        width: 50vw;
+        height: 80vh;
+    }
+    
     .contact-us__modal {
         background-color: hsla(8, 100%, 0%, 0.7);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .contact-us {
+        margin: 0;
+    }
+
+    .form__submit-message {
+        display: none;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        width: 50vw;
+        height: 80vh;
     }
 
     .burger {
@@ -360,5 +441,31 @@ input, textarea {
 
     img.meme {
         width: 70%;
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem 1fr 1fr;
+    }
+
+    .about-us__title {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        font-size: 5rem;
+        letter-spacing: 0.3rem;
+        font-weight: 60;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .review-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .review-container__quote {
+        padding: 3rem;
     }
 }

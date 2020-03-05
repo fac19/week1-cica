@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/81e6d1b2b6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/81e6d1b2b6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">About us</a></li>
+        <li><a href='#services'>Services</a></li>
+        <li><a href="#contact" class="nav-links__contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="mainDiv">
+    <section class="landing-page" id="home">
+      <h1>WE ARE CICA</h1>
+      <div class="memoji">
+        <a href="#Ako"><img class="meme" src="img/Ako.png" alt="Ako-memoji" /></a>
+        <a href="#Chloe"><img class="meme" src="img/Chloe.png" alt="Chloe-memoji" /></a>
+        <a href="#Ina"><img class="meme" src="img/Ina.png" alt="Ina-memoji" /></a>
+        <a href="#Campbell"><img class="meme" src="img/Campbell.png" alt="Campbell-memoji" /></a>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutus">About us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact" class="nav-links__contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    </section>
 
-    <main>
-      <section class="landing-page" id="home">
-        <h1>WE ARE CICA</h1>
-        <div class="memoji">
-          <a href="#Ako"
-            ><img class="meme" src="img/Ako.png" alt="Ako-memoji"
-          /></a>
-          <a href="#Chloe"
-            ><img class="meme" src="img/Chloe.png" alt="Chloe-memoji"
-          /></a>
-          <a href="#Ina"
-            ><img class="meme" src="img/Ina.png" alt="Ina-memoji"
-          /></a>
-          <a href="#Campbell"
-            ><img class="meme" src="img/Campbell.png" alt="Campbell-memoji"
-          /></a>
-        </div>
-      </section>
+    <section class="about-us" id="aboutus">
+      <h1 class="about-us__title">About us</h1>
+      <fieldset class="about">
+        <legend id='Chloe'>
+          <h3 >Chloe</h3>
+          <img class="small-meme" alt="Chloe-memoji" src="img/Chloe.png" />
+        </legend>
+        <p>Hi, I'm Chloe. I have travelled far and wide across the world. In the desperation of the Blitz, I carried the
+          burden of 200 lives for 10 days. I was shot down over Yugoslavia, near the Hungarian border, by a Serbian
+          fighter who rammed into my plane at an altitude of 1,500ft. <br><br>
 
-      <section class="about-us" id="aboutus">
-        <h1 class="title">About us</h1>
-        <fieldset class="about">
-          <legend>
-            <h3>Chloe</h3>
-            <img class="small-meme" alt="Chloe-memoji" src="img/Chloe.png" />
-          </legend>
-          <p>Hi, I'm Chloe</p>
+          It was the final violation in a series of offences which would include one in September last year, when I
+          caught a Turkish plane with 10 gallons of fuel on board to be sold on the black market. Luckily my explosives
+          expert saved me, but all of my passengers were killed.<br><br>
+</p>
         </fieldset>
         <fieldset class="about">
-          <legend>
+          <legend id='Ako'>
             <h3>Ako</h3>
             <img class="small-meme" alt="Ako-memoji" src="img/Ako.png" />
           </legend>
           <p>Hi, I'm Ako. I am from mysterious land, land of warriors, warriors of love. Two years ago, my Shaolin master showed me the ways of javaScript. Since that, we had the dedication and constant practice in obscure practises of mastering the so-called 'program tent'. CSS meditations and HTML yoga have become my daily routine. The cleansing power of js will bring blessings to all of your surroundings.</p>
         </fieldset>
         <fieldset class="about">
-          <legend>
+          <legend id='Ina'>
             <h3>Ina</h3>
             <img class="small-meme" alt="Ina-memoji" src="img/Ina.png" />
           </legend>
-          <p>Hi, I'm Ina</p>
+          <p>Ina specialises in front-end development and UI/UX design. She's an industry veteran with a long list of projects in over 100 countries. Enjoys attending events such as ReactEurope in Berlin and Mashable EU. Where she shakes hands and does fun stuff.</p>
         </fieldset>
         <fieldset class="about">
-          <legend>
+          <legend id='Campbell'>
             <h3>Campbell</h3>
             <img
               class="small-meme"
@@ -86,85 +85,108 @@
         </fieldset>
       </section>
 
-      <button class="contact-us__button" id="contact-us__button">
-        Contact Us
-      </button>
-      <section class="contact-us">
-        <div class="contact-us__modal" id="modalBox">
-          <div class="contact-us__modal-content" id="modalCont"></div>
-          <form class="contact-us__form">
-            <span class="close" id="close">&times;</span>
-            <header>
-              <h1 class="form__header">Let's collaborate!</h1>
-            </header>
-            <div class="form__details">
-              <label>
-                Name*
-                <input
-                  type="text"
-                  name="name"
-                  label="Your Name"
-                  placeholder="Full Name"
-                  required
-                /> </label
-              ><br />
-            </div>
-            <div class="form__details">
-              <label>
-                Email*
-                <input
-                  type="email"
-                  name="email"
-                  label="Your Email"
-                  placeholder="Email"
-                  required
-                /> </label
-              ><br />
-            </div>
-            <div class="form__details">
-              <label>
-                Phone*
-                <input
-                  type="tel"
-                  name="tel"
-                  placeholder="Phone Number"
-                  required
-                /> </label
-              ><br />
-            </div>
-            <div class="form__details">
-              <label>
-                Company*
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Company Name"
-                  required
-                /> </label
-              ><br />
-            </div>
-            <div class="form__details">
-              <label>
-                Message
-                <textarea
-                  name="message"
-                  placeholder="Send us a message!"
-                  rows="1"
-                ></textarea> </label
-              ><br />
-            </div>
-            <button type="submit" class="form__submit">Submit</button>
-            <div class="form__submit-message">Thanks!</div>
-          </form>
+    <section class='services' id='services'>
+      <h1 class='services__title'>Services</h1>
+      <div class='service-images'>
+        <img src='img/Dev.png' alt='services-icons'>
+        <img src='img/Product Design.png' alt='services-icons'>
+        <img src='img/UX design.png' alt='services-icons'>
+        <img src='img/Web design.png' alt='services-icons'>
+
+      </div>
+
+      <div class='review-container'>
+        <div class="review-container__quote">
+        <i class="fas fa-quote-left"></i>
+        <p class='review'>I have worked with CICA for the last 5 years and their web designers and
+          project managers have always been there for me.
+          Any changes, updates or modifications I need on the website is always taken care of quickly
+          and efficiently. I am honored to be able to express my deep gratitude for their expertise.</p>
+        <i class="fas fa-quote-right"></i>
+        <p class='reviewer'><em>Isabella, Wandsworth</em></p>
+        <br>
         </div>
-      </section>
-    </main>
+        <div class="review-container__quote">
+        <i class="fas fa-quote-left 3x"></i>
+        <p class='review'>Excellent service, working with CICA was great.
+          Thanks to their knowledge and determination our website looks great and
+          functions really well. I recommend anyone who is looking for a custom website
+          to give them a call. They'll help optimise your site in no time!</p>
+        <i class="fas fa-quote-right"></i>
+        <p class='reviewer'><em>Morgan, Newcastle-upon-Tyne</em></p>
+        <br>
+        </div>
+        <div class="review-container__quote">
+        <i class="fas fa-quote-left"></i>
+        <p class='review'>The CICA team are the best! They pay attention to every detail
+          and were very accommodating with our website.
+          They went above and beyond to make sure that the site was exactly what I had envisioned.
+          I would highly recommend CICA to any one who is looking for a
+          professional web designer.</p>
+        <i class="fas fa-quote-right"></i>
+        <p class='reviewer'><em>Gary, Dundee</em></p>
+        </div>
+      </div>
+    </section>
+
+    <button class="contact-us__button" id="contact-us__button">
+      Contact Us
+    </button>
+    <section class="contact-us">
+      <div class="contact-us__modal" id="modalBox">
+        <div class="contact-us__modal-content" id="modalCont"></div>
+        <form class="contact-us__form">
+          <span class="close" id="close">&times;</span>
+          <header>
+            <h1 class="form__header">Let's collaborate!</h1>
+          </header>
+          <div class="form__details">
+            <label>
+              Name*
+              <input type="text" name="name" label="Your Name" placeholder="Full Name" required /> </label><br />
+          </div>
+          <div class="form__details">
+            <label>
+              Email*
+              <input type="email" name="email" label="Your Email" placeholder="Email" required /> </label><br />
+          </div>
+          <div class="form__details">
+            <label>
+              Phone*
+              <input type="tel" name="tel" placeholder="Phone Number" required /> </label><br />
+          </div>
+          <div class="form__details">
+            <label>
+              Company*
+              <input type="text" name="company" placeholder="Company Name" required /> </label><br />
+          </div>
+          <div class="form__details">
+            <label>
+              Message
+              <textarea name="message" placeholder="Send us a message!" rows="1"></textarea> </label><br />
+          </div>
+          <button type="submit" class="form__submit">Submit</button>
+          <div class="form__submit-message">Thanks!</div>
+        </form>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+    <button class="button-scroll">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </footer>
+</body>
+<script src="script.js"></script>
 
     <footer>
       <button class="button-scroll">
         <i class="fas fa-chevron-up"></i>
       </button>
     </footer>
+    
   </body>
   <script src="script.js"></script>
 </html>

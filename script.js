@@ -1,21 +1,26 @@
 var contactButton = document.getElementById("contact-us__button");
-var modalForm = document.getElementById("modalBox");
+var contactUs = document.getElementsByClassName("contact-us")[0];
 var closeButton = document.getElementById("close");
+var contactNav = document.getElementsByClassName("nav-links__contact")[0];
 
 contactButton.onclick = () => {
-    modalForm.style.display = 'flex';
+    contactUs.style.display = 'flex';
     contactButton.style.display = 'none';
+}
 
+contactNav.onclick = () => {
+    contactUs.style.display = 'flex';
+    contactButton.style.display = 'none';
 }
 
 closeButton.onclick = () => {
-    modalForm.style.display = 'none';
+    contactUs.style.display = 'none';
     contactButton.style.display = 'flex';
 }
 
 window.onclick = () => {
-    if (event.target == modalForm) {
-    modalForm.style.display  = 'none';
+    if (event.target == contactUs) {
+    contactUs.style.display  = 'none';
     contactButton.style.display = 'flex';
     }
 }
@@ -35,6 +40,7 @@ window.onclick = () => {
  header.addEventListener('click', crossBurger);
  function crossBurger() {
    burgerIcon.classList.toggle('toggle');
+<<<<<<< HEAD
  }
 
 
@@ -59,3 +65,13 @@ function backToTop () {
     behavior: 'smooth'
   });
 }
+||||||| merged common ancestors
+ }
+=======
+ }
+
+ burgerIcon.onclick = () => {
+    contactUs.style.display = 'none';
+    contactButton.style.display = 'flex';
+ }
+>>>>>>> 0f3b9969ea265e9caf06ad71dcf6e386affd3c74

@@ -153,6 +153,7 @@ fieldset.about {
 }
 
 .contact-us__form {
+    position: relative;
     background-color: white;
     width: 100%;
     height: 100%;
@@ -189,7 +190,7 @@ input, textarea {
 .close {
     color: hsl(0, 0%, 40%);
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     top: 0.5rem;
     font-size: 3.5rem;
     cursor: pointer;
@@ -247,6 +248,24 @@ input, textarea {
     position: fixed;
     z-index: 11;
 }
+
+.form__submit-message {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 12;
+    background-color: white;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    color: hsl(0, 0%, 40%);
+    font-weight: 60;
+}
     
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
@@ -280,4 +299,15 @@ input, textarea {
     z-index: 10;
     color: white;
     font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-us__form {
+        width: 50%;
+        height: 80%;
+    }
+
+    .contact-us__modal {
+        background-color: hsla(8, 100%, 0%, 0.7);
+    }
 }

@@ -1,35 +1,14 @@
 var contactButton = document.getElementById("contact-us__button");
 var contactUs = document.getElementsByClassName("contact-us")[0];
+var modal = document.getElementsByClassName("contact-us__modal")[0];
 var closeButton = document.getElementById("close");
 var contactNav = document.getElementsByClassName("nav-links__contact")[0];
+var submitButton = document.querySelector(".form__submit");
+var submitResult = document.querySelector(".form__submit-message");
+const header = document.querySelector('header');
+const nav = document.querySelector('nav');
+const burgerIcon = document.querySelector('.burger');
 
-contactButton.onclick = () => {
-    contactUs.style.display = 'flex';
-    contactButton.style.display = 'none';
-}
-
-contactNav.onclick = () => {
-    contactUs.style.display = 'flex';
-    contactButton.style.display = 'none';
-}
-
-closeButton.onclick = () => {
-    contactUs.style.display = 'none';
-    contactButton.style.display = 'flex';
-}
-
-window.onclick = () => {
-    if (event.target == contactUs) {
-    contactUs.style.display  = 'none';
-    contactButton.style.display = 'flex';
-    }
-}
-
- // Define variables for menu bar
- const header = document.querySelector('header');
- const nav = document.querySelector('nav');
- const burgerIcon = document.querySelector('.burger');
- 
  // Menu slides in when burger is clicked 
  header.addEventListener('click', showNav);
  function showNav () {
@@ -71,7 +50,51 @@ function backToTop () {
  }
 
  burgerIcon.onclick = () => {
+    formDisappear()
+ }
+
+contactButton.onclick = () => {
+    formAppear()
+}
+
+submitButton.onclick = (e) => {
+    e.preventDefault();
+    submitResult.style.display = "flex"
+    setTimeout(() => {
+        submitResult.style.display = "none"; 
+        formDisappear()
+    }, 2000);
+}
+
+contactNav.onclick = () => {
+    formAppear()
+}
+
+closeButton.onclick = () => {
+    formDisappear()
+}
+
+document.onclick = (event) => {
+    if (event.target == modal) {
+    formDisappear()
+    }
+}
+ 
+//This is for the form appearance
+function formAppear() {
+    contactUs.style.display = 'flex';
+    contactButton.style.display = 'none';
+}
+
+//This is for the form disappearance
+function formDisappear() {
     contactUs.style.display = 'none';
     contactButton.style.display = 'flex';
+<<<<<<< HEAD
  }
 >>>>>>> 0f3b9969ea265e9caf06ad71dcf6e386affd3c74
+||||||| merged common ancestors
+ }
+=======
+}
+>>>>>>> master

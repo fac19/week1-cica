@@ -123,16 +123,22 @@ fieldset.about {
 }
 
 .small-meme {
-    width: 40%;
+    width: 35%;
 }
 
 .about legend {
-    width: 60%;
+    width: 70%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     
 }
+
+.about legend h3 {
+   display: inline-block;
+}
+
+/* contact us  */
 
 .contact-us__modal {
     width: 100%;

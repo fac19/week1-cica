@@ -1,9 +1,6 @@
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
@@ -38,10 +35,17 @@ nav {
 .nav-links li {
     padding-bottom: 30%;
 }
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-links li, .backtotop {
     letter-spacing: 2px;
     font-size: 1.3rem;
     text-align: center;
+    
 }
 
 .burger {
@@ -76,7 +80,6 @@ nav {
 } 
 
 
-
 /* landing page */
 .memoji {
     display: grid;
@@ -91,7 +94,7 @@ img.meme {
 }
 
 .landing-page {
-    height: 80vh;
+    height: 100vh;
     padding-top: 30%;
 }
 
@@ -105,8 +108,6 @@ img.meme {
 }
 
 /* About us */
-
-
 fieldset.about {
     border-radius: 10px;
     margin: 7%;
@@ -114,24 +115,48 @@ fieldset.about {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: 1.5rem;
-    border-color: #9be3de;
-    border-style: solid;
+    /* border-color: #9be3de; */
+    border: none;
 }
 
+fieldset.about h3 {
+    font-size: 2rem;
+
+}
+fieldset.about:nth-of-type(1) {
+    background-color: #94CE8E;
+}
+
+fieldset.about:nth-of-type(2) {
+    background-color: #a8d3da;
+}
+
+fieldset.about:nth-of-type(3) {
+    background-color: #f5cab3;
+}
+
+fieldset.about:nth-of-type(4) {
+    background-color: #f3ecb8;
+}
+
+
 .small-meme {
-    width: 40%;
+    width: 35%;
 }
 
 .about legend {
-    width: 60%;
+    width: 70%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     
 }
 
-/* Contact Us */
+.about legend h3 {
+   display: inline-block;
+}
 
+/* contact us  */
 
 .contact-us__modal {
     width: 100%;
@@ -264,6 +289,30 @@ input, textarea {
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
+}
+
+
+/* Button scroll */
+.button-scroll {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background:  #b590ca;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    display: none;
+    z-index: 7;
+}
+
+
+.button-scroll i {
+    z-index: 10;
+    color: white;
+    font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 768px) {

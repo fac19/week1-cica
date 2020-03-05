@@ -5,6 +5,7 @@
 }
 
 header {
+    
     cursor: pointer;
 }
 
@@ -15,12 +16,12 @@ section {
 /* / nav bar / */
 nav {
     width: 100vw;
-    left: -100vw;
+    left: -100%;
     height: 100vh;
     top:0%;
     margin: 0;
     z-index: 9;
-    background: #f3ecb8;
+    background: powderblue;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -97,6 +98,25 @@ img.meme {
     justify-self: center;
 }
 
+.ako:hover {
+    background-color:#94CE8E;
+}
+
+.chloe:hover {
+    background-color:#a8d3da;
+}
+
+.ina:hover {
+    background-color:#f5cab3;
+}
+
+.campbell:hover {
+    background-color:#f3ecb8;
+}
+
+.ako:hover, .chloe:hover, .ina:hover, .campbell:hover {
+    border-radius: 100%;
+}
 .landing-page {
     height: 100vh;
     padding-top: 30%;
@@ -107,9 +127,27 @@ img.meme {
     font-size: 2.2rem;
 }
 
+.landing-page .fa-chevron-down {
+    position: absolute;
+    display: block;
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding: 10%; */
+    font-size: 2rem;
+    animation: bouncing 0.7s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bouncing {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-25px); }
+}
+
 .about-us__title, .services__title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* About us */
@@ -120,61 +158,70 @@ fieldset.about {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: 1.5rem;
-    /* border-color: #9be3de; */
-    border: none;
+    border: 2px solid grey;
 }
 
 fieldset.about h3 {
     font-size: 2rem;
-    text-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+
 }
 fieldset.about:nth-of-type(1) {
-    background-color: #94CE8E;
+    border-color: #94CE8E;
 }
 
 fieldset.about:nth-of-type(2) {
-    background-color: #a8d3da;
+    border-color: #a8d3da;
 }
 
 fieldset.about:nth-of-type(3) {
-    background-color: #f5cab3;
+    border-color: #f5cab3;
 }
 
 fieldset.about:nth-of-type(4) {
-    background-color: #f3ecb8;
+    border-color: #f3ecb8;
 }
 
+fieldset.about p {
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    padding: 0 15px;
+    font-size: 0.9rem;
+}
 
 .small-meme {
     width: 35%;
 }
 
 .about legend {
-    width: 70%;
+    width: 80%;
+    height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    border-radius: 7px;
 }
 
 .about legend h3 {
-    display: inline-block;
+   display: inline-block;
 }
+
+
 
 /* services */
 .service-images {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 0 auto;
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    margin: 0 10px;
     width: 90%;
+    height: auto;
     margin-bottom: 7%;
 }
 
 .service-images img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .review-container {
@@ -208,7 +255,6 @@ p.review {
 }
 
 /* contact us  */
-
 .contact-us__modal {
     width: 100%;
     height: 100%;
@@ -230,8 +276,8 @@ p.review {
 }
 
 label, input, textarea {
-    display: block;
-    width: 100%;
+   display: block;
+   width: 100%;
 }
 
 label {
@@ -268,7 +314,6 @@ input, textarea {
 }
 
 .form__submit {
-    background-color: white;
     border: 1px solid hsl(218, 97%, 52%);
     color: hsl(218, 97%, 52%);
     padding: 0.5rem 1rem;
@@ -276,6 +321,12 @@ input, textarea {
     height: 3rem;
     font-size: 1.25rem;
     cursor: pointer;
+    transition: background-color 1.5s ease-out;
+}
+
+.form__submit:hover, .contact-us__button:hover {
+    background-color: hsl(218, 97%, 52%);
+    color: white;
 }
 
 .contact-us__button {
@@ -290,15 +341,16 @@ input, textarea {
     margin: 0 auto;
     margin-bottom: 1rem;
     display: flex;
+    transition: background-color 1.5s ease-out;
 }
 
 .contact-us__modal {
     position: relative;
     display: flex;
     -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+     -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+       animation-duration: 0.6s;
 }
 
 .contact-us {
@@ -335,12 +387,12 @@ input, textarea {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-
+    
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
-
+  
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
@@ -362,7 +414,6 @@ input, textarea {
     display: none;
     z-index: 7;
 }
-
 
 .button-scroll i {
     z-index: 10;
@@ -386,7 +437,7 @@ input, textarea {
         width: 50vw;
         height: 80vh;
     }
-    
+
     .contact-us__modal {
         background-color: hsla(8, 100%, 0%, 0.7);
         width: 100vw;

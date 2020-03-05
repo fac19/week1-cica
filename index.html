@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/81e6d1b2b6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="index.css" />
   <title>Document</title>
 </head>
@@ -19,6 +20,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#aboutus">About us</a></li>
+        <li><a href='#services'>Services</a></li>
         <li><a href="#contact" class="nav-links__contact">Contact</a></li>
       </ul>
       
@@ -29,29 +31,28 @@
     <section class="landing-page" id="home">
       <h1>WE ARE CICA</h1>
       <div class="memoji">
-        <img class='meme' src="img/Ako.png" alt="Ako-memoji">
-        <img class='meme' src="img/Chloe.png" alt="Chloe-memoji">
-        <img class='meme' src="img/Ina.png" alt="Ina-memoji">
-        <img class='meme' src="img/Campbell.png" alt="Campbell-memoji">
+        <a href='#Ako'><img class='meme' src="img/Ako.png" alt="Ako-memoji"></a>
+        <a href='#Chloe'><img class='meme' src="img/Chloe.png" alt="Chloe-memoji"></a>
+          <a href='#Ina'><img class='meme' src="img/Ina.png" alt="Ina-memoji"></a>
+            <a href='#Campbell'><img class='meme' src="img/Campbell.png" alt="Campbell-memoji"></a>
       </div>
     </section>
     <section class="about-us" id="aboutus">
       <h1 class="title">About us</h1>
-      <fieldset class='about'><legend><h3>Chloe</h3> <img class='small-meme' src='img/Chloe.png'></legend><p>Hi, I'm Chloe</p></fieldset>
-      <fieldset class='about'><legend><h3>Ako</h3><img class='small-meme' src='img/Ako.png'></legend><p>Hi, I'm Ako</p></fieldset>
-      <fieldset class='about'><legend><h3>Ina</h3><img class='small-meme' src='img/Ina.png'></legend><p>Hi, I'm Ina</p></fieldset>
-      <fieldset class='about'><legend><h3>Campbell</h3><img class='small-meme' src='img/Campbell.png'></legend><p>Hi, I'm Campbell</p></fieldset>
+      <fieldset class='about'><legend><h3>Chloe</h3> <img class='small-meme' alt="Chloe-memoji" src='img/Chloe.png'></legend><p>Hi, I'm Chloe</p></fieldset>
+      <fieldset class='about'><legend><h3>Ako</h3><img class='small-meme' alt="Ako-memoji" src='img/Ako.png'></legend><p>Hi, I'm Ako</p></fieldset>
+      <fieldset class='about'><legend><h3>Ina</h3><img class='small-meme' alt="Ina-memoji" src='img/Ina.png'></legend><p>Hi, I'm Ina</p></fieldset>
+      <fieldset class='about'><legend><h3>Campbell</h3><img class='small-meme' alt="Campbell-memoji" src='img/Campbell.png'></legend><p>Hi, I'm Campbell</p></fieldset>
     </section>
-
-    <button class="contact-us__button" id="contact-us__button">Contact Us</button>
-      <section class="contact-us">
-        <div class="contact-us__modal" id="modalBox"> 
-          <div class="contact-us__modal-content" id="modalCont"></div>
-          <form class="contact-us__form">
-            <span class="close" id="close">&times;</span>
-            <header>
-              <h1 class="form__header">Contact Cica!</h1>
-            </header>
+    <section class="contact-us">
+      <button class="contact-us__button" id="contact-us__button">Contact Us</button>
+      <div class="contact-us__modal" id="modalBox"> 
+        <div class="contact-us__modal-content" id="modalCont"></div>
+        <span class="close" id="close">&times;</span>
+        <form class="contact-us__form">
+          <header>
+            <h1 class="form__header">Let's collaborate!</h1>
+          </header>
           <div class="form__details">
             <label>
               Name*      
@@ -91,9 +92,16 @@
       <div class="backtotop">
         <a href="#top">(back to top)</a>
       </div>
-    </main>
-    <footer></footer>
-  </body>
-  <script src="script.js"></script>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+  <button class="button-scroll">
+    <!-- <div><i class="fas fa-arrow-up"></i></div> -->
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</body>
+<script src="script.js"></script>
 </html>
 

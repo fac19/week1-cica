@@ -10,25 +10,52 @@ const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
 
+// Menu slides in when burger is clicked 
+header.addEventListener('click', showNav);
 
- // Menu slides in when burger is clicked 
- header.addEventListener('click', showNav);
- function showNav () {
-   nav.classList.toggle('navToggle');
- }
- 
- // Burger animates when clicked
- header.addEventListener('click', crossBurger);
- function crossBurger() {
-   burgerIcon.classList.toggle('toggle');
- }
+function showNav() {
+  nav.classList.toggle('navToggle');
+}
 
- burgerIcon.onclick = () => {
-    formDisappear()
- }
+// Burger animates when clicked
+header.addEventListener('click', crossBurger);
+
+function crossBurger() {
+  burgerIcon.classList.toggle('toggle');
+}
+
+
+// Define variables for up button 
+const btnScrollToTop = document.querySelector('.button-scroll');
+// up button appears after a bit of scrolling down
+window.addEventListener('scroll', btnAppear);
+
+function btnAppear() {
+  if (window.pageYOffset > 500) {
+    btnScrollToTop.style.display = 'block';
+  } else {
+    btnScrollToTop.style.display = 'none';
+  }
+}
+
+// Back to top when up button is clicked
+btnScrollToTop.addEventListener('click', backToTop);
+
+function backToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+burgerIcon.onclick = () => {
+  formDisappear()
+}
 
 contactButton.onclick = () => {
-    formAppear()
+  formAppear()
 }
 
 // submitButton.onclick = (e) => {
@@ -45,27 +72,27 @@ contactButton.onclick = () => {
 // }
 
 contactNav.onclick = () => {
-    formAppear()
+  formAppear()
 }
 
 closeButton.onclick = () => {
-    formDisappear()
+  formDisappear()
 }
 
 document.onclick = (event) => {
-    if (event.target == modal) {
+  if (event.target == modal) {
     formDisappear()
-    }
+  }
 }
- 
+
 //This is for the form appearance
 function formAppear() {
-    contactUs.style.display = 'flex';
-    contactButton.style.display = 'none';
+  contactUs.style.display = 'flex';
+  contactButton.style.display = 'none';
 }
 
 //This is for the form disappearance
 function formDisappear() {
-    contactUs.style.display = 'none';
-    contactButton.style.display = 'flex';
+  contactUs.style.display = 'none';
+  contactButton.style.display = 'flex';
 }

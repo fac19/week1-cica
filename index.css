@@ -163,14 +163,14 @@ fieldset.about:nth-of-type(4) {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 100%, 0%);
+    background-color: white;
 }
 
 .contact-us__form {
     position: relative;
     background-color: white;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -205,8 +205,8 @@ input, textarea {
     color: hsl(0, 0%, 40%);
     position: absolute;
     right: 2rem;
-    top: 0.5rem;
-    font-size: 3.5rem;
+    top: 1rem;
+    font-size: 3rem;
     cursor: pointer;
 }
 

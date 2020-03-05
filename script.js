@@ -35,6 +35,7 @@ const burgerIcon = document.querySelector('.burger');
    burgerIcon.classList.toggle('toggle');
  }
 
+
 // Menu slides in when burger is clicked 
 header.addEventListener('click', showNav);
 
@@ -48,8 +49,6 @@ header.addEventListener('click', crossBurger);
 function crossBurger() {
   burgerIcon.classList.toggle('toggle');
 }
-
-
 
 // Define variables for up button 
 const btnScrollToTop = document.querySelector('.button-scroll');
@@ -84,7 +83,6 @@ contactButton.onclick = () => {
   formAppear()
 }
 
-
 // submitButton.onclick = (e) => {
 //     for (let i = 0; i <allInput.length; i++){
 //         if (allInput[i].innerText !== '') {
@@ -97,7 +95,6 @@ contactButton.onclick = () => {
 //         }
 //     }
 // }
-
 
 contactNav.onclick = () => {
   formAppear()

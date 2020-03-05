@@ -1,6 +1,7 @@
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -34,10 +35,17 @@ nav {
 .nav-links li {
     padding-bottom: 30%;
 }
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-links li, .backtotop {
     letter-spacing: 2px;
     font-size: 1.3rem;
     text-align: center;
+    
 }
 
 .burger {
@@ -87,7 +95,7 @@ img.meme {
 }
 
 .landing-page {
-    height: 80vh;
+    height: 100vh;
     padding-top: 30%;
 }
 

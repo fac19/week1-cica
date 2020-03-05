@@ -19,7 +19,6 @@ const burgerIcon = document.querySelector('.burger');
  header.addEventListener('click', crossBurger);
  function crossBurger() {
    burgerIcon.classList.toggle('toggle');
-<<<<<<< HEAD
  }
 
 
@@ -44,10 +43,6 @@ function backToTop () {
     behavior: 'smooth'
   });
 }
-||||||| merged common ancestors
- }
-=======
- }
 
  burgerIcon.onclick = () => {
     formDisappear()
@@ -90,11 +85,4 @@ function formAppear() {
 function formDisappear() {
     contactUs.style.display = 'none';
     contactButton.style.display = 'flex';
-<<<<<<< HEAD
- }
->>>>>>> 0f3b9969ea265e9caf06ad71dcf6e386affd3c74
-||||||| merged common ancestors
- }
-=======
 }
->>>>>>> master

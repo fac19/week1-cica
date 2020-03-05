@@ -15,7 +15,7 @@ section {
 /* / nav bar / */
 nav {
     width: 100vw;
-    left: -100%;
+    left: -100vw;
     height: 100vh;
     top:0%;
     margin: 0;
@@ -372,5 +372,42 @@ input, textarea {
     
     .contact-us__modal {
         background-color: hsla(8, 100%, 0%, 0.7);
+    }
+
+    .burger {
+        top: 0rem;
+        left: 2rem;
+    }
+
+    .landing-page {
+        padding: 0;
+        text-align: center;
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .landing-page h1 {
+        font-size: 7rem;
+        letter-spacing: 0.3rem;
+        font-weight: 60;
+        position: absolute;
+        grid-column: span 4;
+        justify-self: center;
+        align-self: end;
+        grid-row: 1/2;
+    }
+
+    .memoji {
+        display: flex;
+        justify-self: center;
+        grid-column: span 4;
+        grid-row: 2/-1;
+        width: 80vw;
+    }
+
+    img.meme {
+        width: 70%;
     }
 }

@@ -10,6 +10,32 @@ const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
 
+
+ // Menu slides in when burger is clicked 
+ header.addEventListener('click', showNav);
+ function showNav () {
+   nav.classList.toggle('navToggle');
+ }
+ 
+ // Burger animates when clicked
+ header.addEventListener('click', crossBurger);
+ function crossBurger() {
+   burgerIcon.classList.toggle('toggle');
+ }
+
+ // Menu slides in when burger is clicked 
+ header.addEventListener('click', showNav);
+ function showNav () {
+   nav.classList.toggle('navToggle');
+ }
+ 
+ // Burger animates when clicked
+ header.addEventListener('click', crossBurger);
+ function crossBurger() {
+   burgerIcon.classList.toggle('toggle');
+ }
+
+
 // Menu slides in when burger is clicked 
 header.addEventListener('click', showNav);
 
@@ -23,7 +49,6 @@ header.addEventListener('click', crossBurger);
 function crossBurger() {
   burgerIcon.classList.toggle('toggle');
 }
-
 
 // Define variables for up button 
 const btnScrollToTop = document.querySelector('.button-scroll');
@@ -93,6 +118,6 @@ function formAppear() {
 
 //This is for the form disappearance
 function formDisappear() {
-  contactUs.style.display = 'none';
-  contactButton.style.display = 'flex';
+    contactUs.style.display = 'none';
+    contactButton.style.display = 'flex';
 }

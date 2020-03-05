@@ -3,11 +3,13 @@ var contactUs = document.getElementsByClassName("contact-us")[0];
 var modal = document.getElementsByClassName("contact-us__modal")[0];
 var closeButton = document.getElementById("close");
 var contactNav = document.getElementsByClassName("nav-links__contact")[0];
+const allInput = document.querySelectorAll('input')
 var submitButton = document.querySelector(".form__submit");
 var submitResult = document.querySelector(".form__submit-message");
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
+
 
  // Menu slides in when burger is clicked 
  header.addEventListener('click', showNav);
@@ -29,14 +31,18 @@ contactButton.onclick = () => {
     formAppear()
 }
 
-submitButton.onclick = (e) => {
-    e.preventDefault();
-    submitResult.style.display = "flex"
-    setTimeout(() => {
-        submitResult.style.display = "none"; 
-        formDisappear()
-    }, 2000);
-}
+// submitButton.onclick = (e) => {
+//     for (let i = 0; i <allInput.length; i++){
+//         if (allInput[i].innerText !== '') {
+//             e.preventDefault();
+//             submitResult.style.display = "flex"
+//             setTimeout(() => {
+//             submitResult.style.display = "none"; 
+//             formDisappear()
+//             }, 2000);
+//         }
+//     }
+// }
 
 contactNav.onclick = () => {
     formAppear()

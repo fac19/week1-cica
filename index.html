@@ -44,36 +44,36 @@
     </section>
 
     <button class="contact-us__button" id="contact-us__button">Contact Us</button>
-      <div class="contact-us">
+      <section class="contact-us">
         <div class="contact-us__modal" id="modalBox"> 
           <div class="contact-us__modal-content" id="modalCont"></div>
-          <span class="close" id="close">&times;</span>
           <form class="contact-us__form">
+            <span class="close" id="close">&times;</span>
             <header>
               <h1 class="form__header">Contact Cica!</h1>
             </header>
           <div class="form__details">
             <label>
               Name*      
-              <input type="text" name="name" label="Your Name" placeholder="Full Name">
+              <input type="text" name="name" label="Your Name" placeholder="Full Name" required>
             </label><br>
           </div>
           <div class="form__details">
             <label>
               Email*
-              <input type="email" name="email" label="Your Email" placeholder="Email">
+              <input type="email" name="email" label="Your Email" placeholder="Email" required>
             </label><br>
           </div>
           <div class="form__details">
             <label>
               Phone*
-              <input type="tel" name="tel" placeholder="Phone Number">
+              <input type="tel" name="tel" placeholder="Phone Number" required>
             </label><br>
           </div>
           <div class="form__details">
             <label>
               Company*
-              <input type="text" name="company" placeholder="Company Name">
+              <input type="text" name="company" placeholder="Company Name" required>
             </label><br>
           </div>
           <div class="form__details">
@@ -83,9 +83,10 @@
             </label><br>
           </div>
             <button type="submit" class="form__submit">Submit</button>
+            <div class="form__submit-message">Thanks!</div>
           </form>
         </div>
-      </div>
+      </section>
 
       <div class="backtotop">
         <a href="#top">(back to top)</a>

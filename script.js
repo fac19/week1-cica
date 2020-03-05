@@ -36,3 +36,26 @@ window.onclick = () => {
  function crossBurger() {
    burgerIcon.classList.toggle('toggle');
  }
+
+
+// Define variables for up button 
+const btnScrollToTop = document.querySelector('.button-scroll');
+// up button appears after a bit of scrolling down
+window.addEventListener('scroll', btnAppear);
+function btnAppear() {
+  if(window.pageYOffset > 500) {
+    btnScrollToTop.style.display = 'block';
+  } else {
+    btnScrollToTop.style.display = 'none';
+  }
+}
+
+// Back to top when up button is clicked
+btnScrollToTop.addEventListener('click', backToTop);
+function backToTop () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}

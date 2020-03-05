@@ -87,7 +87,7 @@ img.meme {
 }
 
 .landing-page {
-    height: 80vh;
+    height: 100vh;
     padding-top: 30%;
 }
 
@@ -229,4 +229,28 @@ input, textarea {
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
+}
+
+
+/* Button scroll */
+.button-scroll {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: tomato;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    display: none;
+    z-index: 7;
+}
+
+
+.button-scroll i {
+    z-index: 10;
+    color: white;
+    font-size: 1.8rem;
 }

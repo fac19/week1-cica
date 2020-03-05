@@ -19,7 +19,6 @@ const burgerIcon = document.querySelector('.burger');
  header.addEventListener('click', crossBurger);
  function crossBurger() {
    burgerIcon.classList.toggle('toggle');
-<<<<<<< HEAD
  }
 
 

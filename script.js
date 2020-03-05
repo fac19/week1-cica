@@ -3,11 +3,38 @@ var contactUs = document.getElementsByClassName("contact-us")[0];
 var modal = document.getElementsByClassName("contact-us__modal")[0];
 var closeButton = document.getElementById("close");
 var contactNav = document.getElementsByClassName("nav-links__contact")[0];
+const allInput = document.querySelectorAll('input')
 var submitButton = document.querySelector(".form__submit");
 var submitResult = document.querySelector(".form__submit-message");
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
+
+
+ // Menu slides in when burger is clicked 
+ header.addEventListener('click', showNav);
+ function showNav () {
+   nav.classList.toggle('navToggle');
+ }
+ 
+ // Burger animates when clicked
+ header.addEventListener('click', crossBurger);
+ function crossBurger() {
+   burgerIcon.classList.toggle('toggle');
+ }
+
+ // Menu slides in when burger is clicked 
+ header.addEventListener('click', showNav);
+ function showNav () {
+   nav.classList.toggle('navToggle');
+ }
+ 
+ // Burger animates when clicked
+ header.addEventListener('click', crossBurger);
+ function crossBurger() {
+   burgerIcon.classList.toggle('toggle');
+ }
+
 
 // Menu slides in when burger is clicked 
 header.addEventListener('click', showNav);
@@ -22,7 +49,6 @@ header.addEventListener('click', crossBurger);
 function crossBurger() {
   burgerIcon.classList.toggle('toggle');
 }
-
 
 // Define variables for up button 
 const btnScrollToTop = document.querySelector('.button-scroll');
@@ -57,14 +83,18 @@ contactButton.onclick = () => {
   formAppear()
 }
 
-submitButton.onclick = (e) => {
-  e.preventDefault();
-  submitResult.style.display = "flex"
-  setTimeout(() => {
-    submitResult.style.display = "none";
-    formDisappear()
-  }, 2000);
-}
+// submitButton.onclick = (e) => {
+//     for (let i = 0; i <allInput.length; i++){
+//         if (allInput[i].innerText !== '') {
+//             e.preventDefault();
+//             submitResult.style.display = "flex"
+//             setTimeout(() => {
+//             submitResult.style.display = "none"; 
+//             formDisappear()
+//             }, 2000);
+//         }
+//     }
+// }
 
 contactNav.onclick = () => {
   formAppear()
@@ -88,6 +118,6 @@ function formAppear() {
 
 //This is for the form disappearance
 function formDisappear() {
-  contactUs.style.display = 'none';
-  contactButton.style.display = 'flex';
+    contactUs.style.display = 'none';
+    contactButton.style.display = 'flex';
 }

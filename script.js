@@ -9,7 +9,6 @@ const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
 
-<<<<<<< HEAD
  // Menu slides in when burger is clicked 
  header.addEventListener('click', showNav);
  function showNav () {
@@ -21,7 +20,7 @@ const burgerIcon = document.querySelector('.burger');
  function crossBurger() {
    burgerIcon.classList.toggle('toggle');
  }
-||||||| merged common ancestors
+
  // Menu slides in when burger is clicked 
  header.addEventListener('click', showNav);
  function showNav () {
@@ -32,9 +31,8 @@ const burgerIcon = document.querySelector('.burger');
  header.addEventListener('click', crossBurger);
  function crossBurger() {
    burgerIcon.classList.toggle('toggle');
-<<<<<<< HEAD
  }
-=======
+
 // Menu slides in when burger is clicked 
 header.addEventListener('click', showNav);
 
@@ -48,7 +46,7 @@ header.addEventListener('click', crossBurger);
 function crossBurger() {
   burgerIcon.classList.toggle('toggle');
 }
->>>>>>> 65a73cf19c2c0bf31b30cc785ec6fdb82fd7647c
+
 
 
 // Define variables for up button 
@@ -115,23 +113,6 @@ function formAppear() {
 
 //This is for the form disappearance
 function formDisappear() {
-<<<<<<< HEAD
     contactUs.style.display = 'none';
     contactButton.style.display = 'flex';
 }
-||||||| merged common ancestors
-    contactUs.style.display = 'none';
-    contactButton.style.display = 'flex';
-<<<<<<< HEAD
- }
->>>>>>> 0f3b9969ea265e9caf06ad71dcf6e386affd3c74
-||||||| merged common ancestors
- }
-=======
-}
->>>>>>> master
-=======
-  contactUs.style.display = 'none';
-  contactButton.style.display = 'flex';
-}
->>>>>>> 65a73cf19c2c0bf31b30cc785ec6fdb82fd7647c

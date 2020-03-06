@@ -1,11 +1,11 @@
-var contactButton = document.getElementById("contact-us__button");
-var contactUs = document.getElementsByClassName("contact-us")[0];
-var modal = document.getElementsByClassName("contact-us__modal")[0];
-var closeButton = document.getElementById("close");
-var contactNav = document.getElementsByClassName("nav-links__contact")[0];
+const contactButton = document.getElementById("contact-us__button");
+const contactUs = document.getElementsByClassName("contact-us")[0];
+const modal = document.getElementsByClassName("contact-us__modal")[0];
+const closeButton = document.getElementById("close");
+const contactNav = document.getElementsByClassName("nav-links__contact")[0];
 const allInput = document.querySelectorAll('input')
-var submitButton = document.querySelector(".form__submit");
-var submitResult = document.querySelector(".form__submit-message");
+const submitButton = document.querySelector(".form__submit");
+const submitResult = document.querySelector(".form__submit-message");
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
@@ -15,14 +15,12 @@ const main = document.querySelector('.mainDiv');
  // Menu slides in when burger is clicked 
  header.addEventListener('click', showNav);
  function showNav () {
-//    main.classList.add('mainSquish')
    nav.classList.toggle('navToggle');
  }
 
  // Burger animates when clicked
  header.addEventListener('click', crossBurger);
  function crossBurger() {
-//    main.classList.remove('mainSquish');
    burgerIcon.classList.toggle('toggle');
  }
 

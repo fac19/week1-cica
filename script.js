@@ -18,7 +18,7 @@ const main = document.querySelector('.mainDiv');
 //    main.classList.add('mainSquish')
    nav.classList.toggle('navToggle');
  }
- console.log(main.classList)
+
  // Burger animates when clicked
  header.addEventListener('click', crossBurger);
  function crossBurger() {

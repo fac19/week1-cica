@@ -93,7 +93,7 @@ nav {
 
 
 /* landing page */
-.memoji {
+.landing-page__memoji {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -489,7 +489,7 @@ input, textarea {
         grid-row: 1/2;
     }
 
-    .memoji {
+    .landing-page__memoji {
         display: flex;
         justify-self: center;
         grid-column: span 4;

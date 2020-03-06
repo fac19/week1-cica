@@ -488,6 +488,7 @@ input, textarea {
         grid-column: span 4;
         grid-row: 2/-1;
         width: 80vw;
+        height: 30%;
     }
 
     img.meme {

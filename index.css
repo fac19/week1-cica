@@ -203,6 +203,7 @@ fieldset.about p {
     width: 80%;
     height: 85px;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     border-radius: 7px;
@@ -516,6 +517,24 @@ input, textarea {
         font-weight: 60;
         justify-self: center;
         align-self: center;
+    }
+
+    fieldset.about p {
+        line-height: 1.5rem;
+        padding: 10px 30px 0 30px;
+    }
+
+    #ina-about {
+        padding-top: 30px;
+    }
+
+    .service-images {
+        display: grid;
+        grid-template-rows: minmax(220px, 1fr);
+        grid-template-columns: repeat(4, minmax(260px, 1fr));
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 4%;
     }
 
     .review-container {

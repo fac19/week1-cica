@@ -9,7 +9,6 @@ const submitResult = document.querySelector(".form__submit-message");
 const header = document.querySelector('header');
 const nav = document.querySelector('nav');
 const burgerIcon = document.querySelector('.burger');
-const main = document.querySelector('.mainDiv');
 
 
  // Menu slides in when burger is clicked 

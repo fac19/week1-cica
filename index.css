@@ -3,6 +3,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+:root {
+    --button-blue:  hsl(218, 97%, 52%);
+    --ako-background:hsl(114, 40%, 68%);
+    --chloe-background: hsl(188, 40%, 76%);
+    --ina-background: hsl(21, 77%, 83%);
+    --campbell-background: hsl(53, 71%, 84%);
+}
 
 header {
     
@@ -21,7 +28,7 @@ nav {
     top:0%;
     margin: 0;
     z-index: 9;
-    background: powderblue;
+    background: hsl(187, 52%, 80%);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -43,7 +50,7 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: hsl(0, 0%, 0%);
 }
 
 .nav-links li, .backtotop {
@@ -63,7 +70,7 @@ nav {
     width: 30px;
     height: 3px;
     margin: 8px;
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
 }
 .burger span {
     letter-spacing: 1px;
@@ -86,7 +93,7 @@ nav {
 
 
 /* landing page */
-.memoji {
+.landing-page__memoji {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -99,19 +106,19 @@ img.meme {
 }
 
 .ako:hover {
-    background-color:#94CE8E;
+    background-color: var(--ako-background)
 }
 
 .chloe:hover {
-    background-color:#a8d3da;
+    background-color: var(--chloe-background);
 }
 
 .ina:hover {
-    background-color:#f5cab3;
+    background-color:var(--ina-background);
 }
 
 .campbell:hover {
-    background-color:#f3ecb8;
+    background-color:var(--campbell-background);
 }
 
 .ako:hover, .chloe:hover, .ina:hover, .campbell:hover {
@@ -158,7 +165,7 @@ fieldset.about {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: 1.5rem;
-    border: 2px solid grey;
+    border: 2px solid hsl(0, 0%, 50%);
 }
 
 fieldset.about h3 {
@@ -166,19 +173,19 @@ fieldset.about h3 {
 
 }
 fieldset.about:nth-of-type(1) {
-    border-color: #94CE8E;
+    border-color: var(--ako-background);
 }
 
 fieldset.about:nth-of-type(2) {
-    border-color: #a8d3da;
+    border-color: var(--chloe-background);
 }
 
 fieldset.about:nth-of-type(3) {
-    border-color: #f5cab3;
+    border-color: var(--ina-background);
 }
 
 fieldset.about:nth-of-type(4) {
-    border-color: #f3ecb8;
+    border-color: var(--campbell-background);
 }
 
 fieldset.about p {
@@ -242,7 +249,7 @@ p.review {
 
 .fas {
     font-size: 1.5em;
-    color: rgba(85, 85, 85, 0.849);
+    color: hsla(0, 0%, 33%, 0.8);
 }
 
 
@@ -260,12 +267,12 @@ p.review {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .contact-us__form {
     position: relative;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
@@ -314,8 +321,8 @@ input, textarea {
 }
 
 .form__submit {
-    border: 1px solid hsl(218, 97%, 52%);
-    color: hsl(218, 97%, 52%);
+    border: 1px solid var(--button-blue);
+    color: var(--button-blue);
     padding: 0.5rem 1rem;
     width: 7rem;
     height: 3rem;
@@ -325,14 +332,14 @@ input, textarea {
 }
 
 .form__submit:hover, .contact-us__button:hover {
-    background-color: hsl(218, 97%, 52%);
+    background-color: var(--button-blue);
     color: white;
 }
 
 .contact-us__button {
     background-color: white;
-    border: 1px solid hsl(218, 97%, 52%);
-    color: hsl(218, 97%, 52%);
+    border: 1px solid var(--button-blue);
+    color: var(--button-blue);
     padding: 0.5rem 1rem;
     width: 8rem;
     height: 3rem;
@@ -377,7 +384,7 @@ input, textarea {
     overflow: hidden;
     position: fixed;
     z-index: 12;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
     color: hsl(0, 0%, 40%);
@@ -407,7 +414,7 @@ input, textarea {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    background:  #b590ca;
+    background:  hsl(278, 35%, 68%);
     border: none; 
     outline: none;
     cursor: pointer;
@@ -482,7 +489,7 @@ input, textarea {
         grid-row: 1/2;
     }
 
-    .memoji {
+    .landing-page__memoji {
         display: flex;
         justify-self: center;
         grid-column: span 4;

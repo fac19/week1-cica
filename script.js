@@ -63,7 +63,7 @@ submitButton.onclick = (e) => {
         if (allInput[i].value !== '') {
           submitArray.push(allInput[i]);
         }
-    if (submitArray.length == 4){
+    if (submitArray.length == 4 && submitArray[1].value.includes('@')){
          e.preventDefault();
          submitResult.style.display = "flex"
          setTimeout(() => {

@@ -57,16 +57,21 @@ contactButton.onclick = () => {
 }
 
 submitButton.onclick = (e) => {
+    const submitArray = [];
+
     for (let i = 0; i <allInput.length; i++){
         if (allInput[i].value !== '') {
-            e.preventDefault();
-            submitResult.style.display = "flex"
-            setTimeout(() => {
-            submitResult.style.display = "none"; 
-            formDisappear()
-            }, 2000);
+          submitArray.push(allInput[i]);
         }
+    if (submitArray.length == 4){
+         e.preventDefault();
+         submitResult.style.display = "flex"
+         setTimeout(() => {
+         submitResult.style.display = "none"; 
+         formDisappear()
+         }, 2000);
     }
+  }
 }
 
 contactNav.onclick = () => {
